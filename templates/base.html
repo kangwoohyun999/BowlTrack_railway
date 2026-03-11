@@ -37,15 +37,15 @@
       --shadow: rgba(0,0,0,0.4);
     }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html, body { height: 100%; }
+    html { height: 100%; }
     body {
       font-family: 'Noto Sans KR', sans-serif;
       background: var(--bg);
       color: var(--text);
       transition: background 0.3s, color 0.3s;
       min-height: 100vh;
-      display: flex;
-      flex-direction: column;
+      overflow-y: auto;
+      overflow-x: hidden;
     }
     /* ── HEADER ── */
     .topbar {
@@ -71,9 +71,8 @@
     }
     /* ── MAIN CONTENT ── */
     .main-content {
-      flex: 1;
       margin-top: 56px;
-      margin-bottom: var(--nav-h);
+      margin-bottom: calc(var(--nav-h) + 12px);
       padding: 20px 16px;
       max-width: 480px;
       width: 100%;
