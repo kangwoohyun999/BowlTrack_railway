@@ -54,19 +54,16 @@ input:checked + .toggle-slider::before { transform: translateX(22px); }
   <div class="style-grid">
     <label class="style-opt {% if user.style == 'dumless' %}selected{% endif %}" id="so-dumless">
       <input type="radio" name="style" value="dumless" {% if user.style == 'dumless' %}checked{% endif %}>
-      <div class="style-opt-emoji">🏹</div>
       <div class="style-opt-name">덤리스</div>
       <div class="style-opt-eng">Thumbless</div>
     </label>
     <label class="style-opt {% if user.style == 'twohand' %}selected{% endif %}" id="so-twohand">
       <input type="radio" name="style" value="twohand" {% if user.style == 'twohand' %}checked{% endif %}>
-      <div class="style-opt-emoji">🤲</div>
       <div class="style-opt-name">투핸드</div>
       <div class="style-opt-eng">Two-hand</div>
     </label>
     <label class="style-opt {% if user.style == 'cranker' %}selected{% endif %}" id="so-cranker">
       <input type="radio" name="style" value="cranker" {% if user.style == 'cranker' %}checked{% endif %}>
-      <div class="style-opt-emoji">💥</div>
       <div class="style-opt-name">크랭커</div>
       <div class="style-opt-eng">Cranker</div>
     </label>
