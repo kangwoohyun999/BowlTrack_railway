@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BowlTrack — 오류</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { min-height: 100vh; background: #0f0e0c; font-family: 'Noto Sans KR', sans-serif;
+      display: flex; align-items: center; justify-content: center; padding: 20px; }
+    .box { background: #1c1a17; border: 1px solid #3a3530; border-radius: 20px;
+      padding: 40px 32px; max-width: 420px; width: 100%; text-align: center; }
+    .icon { font-size: 48px; margin-bottom: 16px; }
+    h1 { font-family: 'Bebas Neue', sans-serif; font-size: 28px; color: #e85535;
+      letter-spacing: 2px; margin-bottom: 12px; }
+    p { color: #9a8e82; font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+    code { background: #252320; color: #f0ede8; padding: 2px 8px;
+      border-radius: 6px; font-size: 13px; }
+    .steps { background: #252320; border-radius: 12px; padding: 16px 20px;
+      text-align: left; margin-top: 20px; }
+    .steps p { color: #f0ede8; font-size: 13px; margin-bottom: 6px; }
+    .steps p:last-child { margin-bottom: 0; }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="icon">🔌</div>
+    <h1>DB 연결 오류</h1>
+    <p>데이터베이스에 연결할 수 없습니다.</p>
+    <p>Railway에서 <code>DATABASE_URL</code> 환경변수가 설정되어 있는지 확인해주세요.</p>
+    <div class="steps">
+      <p>✅ Railway → 웹앱 서비스 선택</p>
+      <p>✅ Variables 탭 → DATABASE_URL 확인</p>
+      <p>✅ PostgreSQL 서비스가 추가되어 있는지 확인</p>
+    </div>
+  </div>
+</body>
+</html>
